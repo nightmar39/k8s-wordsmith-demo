@@ -94,3 +94,4 @@ kubectl apply -f kube-deployment.yml
 
 Now browse to http://localhost:8081 and you will see the same site.
 Anthony was here
+Trying this again

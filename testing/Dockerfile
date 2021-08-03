@@ -1,4 +1,4 @@
-FROM lambci/lambda:build-nodejs12 as build-env
+FROM lambci/lambda:build-nodejs12.x as build-env
 
 FROM nginx:latest
 

@@ -1,6 +1,6 @@
-FROM nightmar39/k8s-wordsmith-demo:master as build-env
+FROM lambci/lambda:build-nodejs12 as build-env
 
-FROM nginx:latest
+FROM hobsons/samcli
 
 COPY --from=build-env static /static
 

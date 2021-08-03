@@ -1,6 +1,6 @@
 FROM lambci/lambda:build-nodejs12 as build-env
 
-FROM hobsons/samcli
+FROM nginx:latest
 
 COPY --from=build-env static /static
 

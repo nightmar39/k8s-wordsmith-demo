@@ -8,5 +8,5 @@ FROM nginx:latest
 
 WORKDIR /app
 
-COPY --from=build-env /app/build /app/build
+COPY --from=build-env /app/web /app/build
 

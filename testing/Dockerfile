@@ -6,8 +6,6 @@ FROM test-env as build-env
 
 WORKDIR /app/web
 
-RUN npm run build -S
-
 RUN npm prune --production -S
 
 FROM nginx:latest

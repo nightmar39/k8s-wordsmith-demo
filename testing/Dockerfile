@@ -6,7 +6,7 @@ FROM test-env as build-env
 
 WORKDIR /app
 
-RUN npm run build web -S
+RUN npm run build /web -S
 
 RUN npm prune --production -S
 

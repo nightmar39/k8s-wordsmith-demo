@@ -4,9 +4,9 @@ COPY /web /app/web
 
 FROM test-env as build-env
 
-WORKDIR /app
+WORKDIR /app/web
 
-RUN npm run build /web -S
+RUN npm run build -S
 
 RUN npm prune --production -S
 

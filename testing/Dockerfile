@@ -2,11 +2,11 @@ FROM lambci/lambda:build-nodejs12.x as test-env
 
 COPY /web /app/web
 
-WORKDIR /app
-
 FROM test-env as build-env
 
-RUN npm run build -S
+WORKDIR /app
+
+RUN npm run build web -S
 
 RUN npm prune --production -S
 
